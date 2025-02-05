@@ -51,5 +51,23 @@ The **Real Estate Business Management System** is a web application designed to 
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/real-estate-management.git
+   git clone https://github.com/hirock0/Real-State-Business.git
    cd real-estate-management
+
+  ## ⚙️ Configuration
+### Create a .env file in the server folder and add:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+
+## 🛠️ Troubleshooting
+Ensure MongoDB is running.
+Verify .env configurations.
+Restart nodemon if it crashes:
+
+- npm run dev
