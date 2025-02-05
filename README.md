@@ -53,6 +53,13 @@ The **Real Estate Business Management System** is a web application designed to 
    ```sh
    git clone https://github.com/hirock0/Real-State-Business.git
    cd real-estate-management
+   
+   ```
+ ## Install server dependencies
+- npm install
+
+## To run project
+- npm run dev
 
   ## ⚙️ Configuration
 ### Create a .env file in the server folder and add:
