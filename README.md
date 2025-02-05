@@ -4,19 +4,30 @@
 
 The **Real Estate Business Management System** is a web application designed to streamline property management, client interactions, and business transactions in the real estate sector. This system leverages a modern web stack, including **Node.js, Express, MongoDB, React, and Tailwind CSS**, to deliver a seamless and efficient user experience.
 
-## 📖 Table of Contents
+### 📦 Dependencies
+## Server-Side Dependencies (Backend)
+# The backend is built with Node.js and Express.js, using the following dependencies:
 
-- [Introduction](#-introduction)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Dependencies](#-dependencies)
-  - [Server-Side Dependencies](#server-side-dependencies)
-  - [Client-Side Dependencies](#client-side-dependencies)
-- [Configuration](#-configuration)
-- [Troubleshooting](#-troubleshooting)
-- [Contributors](#-contributors)
-- [License](#-license)
+- bcryptjs - Password hashing
+- body-parser - Parse incoming request bodies
+- cloudinary - Image storage
+- cors - Cross-origin resource sharing
+- dotenv - Manage environment variables
+- express - Web framework
+- jsonwebtoken - User authentication
+- mongodb - Database connection
+- nodemon - Development server auto-restart
+- stripe - Payment processing
+- Client-Side Dependencies (Frontend)
+
+  
+## The frontend is built using React with Vite, and includes:
+
+- @vitejs/plugin-react - React support in Vite
+- Tailwind CSS - Styling framework
+- DaisyUI - UI component library
+- PostCSS & Autoprefixer - CSS processing
+- ESLint & Plugins - Code quality and linting tools
 
 ## ✨ Features
 
