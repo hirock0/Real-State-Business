@@ -6,7 +6,7 @@ The **Real Estate Business Management System** is a web application designed to 
 
 ### 📦 Dependencies
 ## Server-Side Dependencies (Backend)
-# The backend is built with Node.js and Express.js, using the following dependencies:
+### The backend is built with Node.js and Express.js, using the following dependencies:
 
 - bcryptjs - Password hashing
 - body-parser - Parse incoming request bodies
@@ -21,7 +21,7 @@ The **Real Estate Business Management System** is a web application designed to 
 - Client-Side Dependencies (Frontend)
 
   
-## The frontend is built using React with Vite, and includes:
+### The frontend is built using React with Vite, and includes:
 
 - @vitejs/plugin-react - React support in Vite
 - Tailwind CSS - Styling framework
