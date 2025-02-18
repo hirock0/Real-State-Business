@@ -96,17 +96,17 @@ const Nav = () => {
           !logutPopupFlag ? " hidden scale-0" : "block scale-100"
         } fixed z-50 top-0 left-0 right-0 bottom-0 bg-slate-800/90 transition-all flex items-center justify-center text-white`}
       >
-        <div className=" rounded-md shadow-lg bg-gradient-to-tl to-blue-600/80 from-yellow-500/80 h-52 w-72 flex items-center justify-center">
+        <div className=" rounded-md shadow-lg backdrop:filter backdrop-blur-3xl shadow-slate-600 hover:scale-110 h-52 w-72 flex items-center justify-center">
           <div className="">
             <h1>Do you want to logout or not?</h1>
             <div className=" mt-5 flex items-center justify-center gap-5">
               <button
                 onClick={() => setLogoutPopupFlag(false)}
-                className=" btn btn-warning"
+                className=" btn bg-red-600 border-0 text-white"
               >
                 Cancel
               </button>
-              <button onClick={() => logout()} className=" btn btn-success ">
+              <button onClick={() => logout()} className=" btn text-white btn-success ">
                 Logout
               </button>
             </div>
