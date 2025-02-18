@@ -105,7 +105,7 @@ const Property_Details = () => {
               <h2 className="text-3xl font-bold">{property?.title}</h2>
               <p className="text-gray-600 mt-4">{property?.description}</p>
               <p className="text-gray-800 mt-2">
-                <strong>Price Range:</strong> {property?.priceRangeMax}
+                <strong>Price Range:</strong> {property?.priceRangeMin}Tk - {property?.priceRangeMax}TK
               </p>
               <p className="text-gray-800 mt-2">
                 <strong>Agent:</strong> {property?.name}

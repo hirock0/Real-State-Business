@@ -30,5 +30,5 @@ app.use("/api/payment", stripeRoutes);
 app.use("/api/propertise", propertiseRoutes);
 
 app.listen(port, () => {
-  // console.log(`Backend is running on port ${port}`);
+  console.log(`Backend is running on port ${port}`);
 });

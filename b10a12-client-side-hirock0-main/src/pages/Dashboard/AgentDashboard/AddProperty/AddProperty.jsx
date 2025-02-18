@@ -20,6 +20,7 @@ const AddProperty = () => {
       data.propertyImage = imagePreview;
       data.image = loggedUser?.image;
       const response = await axios.post("/api/agent/add_property", data);
+      console.log(data)
       if (response?.data?.success) {
         swal({
           title: response?.data?.message,

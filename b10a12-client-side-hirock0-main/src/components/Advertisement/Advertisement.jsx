@@ -32,28 +32,36 @@ const Advertisement = () => {
                     alt={ad.location}
                     className="h-48 w-full object-cover rounded-lg mb-4"
                   />
-                  <h3 className="text-xl font-bold">
-                    Property Name: {ad.title}
-                  </h3>
-                  <h3 className="text-xl font-bold">Location: {ad.location}</h3>
-                  <div className=" flex items-center gap-5">
-                    <p className="text-gray-600">${ad.priceRangeMax}</p>
-                    <h1>-</h1>
-                    <p className="text-gray-600">${ad.priceRangeMin}</p>
+                  <div className=" h-72 flex flex-col justify-between">
+                    <div className="">
+                      <h3 className="text-xl font-bold">
+                        Property Name: {ad.title}
+                      </h3>
+                      <h3 className="text-xl font-bold">
+                        Location: {ad.location}
+                      </h3>
+                    </div>
+                    <div className="">
+                      <div className=" flex items-center gap-5">
+                        <p className="text-gray-600">${ad.priceRangeMax}</p>
+                        <h1>-</h1>
+                        <p className="text-gray-600">${ad.priceRangeMin}</p>
+                      </div>
+                      <p className="flex items-center gap-2">
+                        <FaCheckCircle
+                          className={`${
+                            ad.isVerified ? "text-green-500" : "text-gray-500"
+                          }`}
+                        />
+                        {ad.isVerified ? "Verified" : "Not Verified"}
+                      </p>
+                    </div>
+                    <Link to={`/property_details/${ad?._id}`}>
+                      <button className="btn btn-primary mt-4 w-full">
+                        View Details
+                      </button>
+                    </Link>
                   </div>
-                  <p className="flex items-center gap-2">
-                    <FaCheckCircle
-                      className={`${
-                        ad.isVerified ? "text-green-500" : "text-gray-500"
-                      }`}
-                    />
-                    {ad.isVerified ? "Verified" : "Not Verified"}
-                  </p>
-                  <Link to={`/property_details/${ad?._id}`}>
-                    <button className="btn btn-primary mt-4 w-full">
-                      View Details
-                    </button>
-                  </Link>
                 </div>
               ))}
             </div>
