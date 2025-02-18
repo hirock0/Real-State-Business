@@ -13,7 +13,11 @@ const Banner = () => {
     },
     {
       title: "Luxary Home",
-      img: "https://cdn.pixabay.com/photo/2019/07/13/16/30/architecture-4335215_960_720.jpg",
+      img: "https://cdn.pixabay.com/photo/2020/02/27/17/17/building-4885295_960_720.jpg",
+    },
+    {
+      title: "Comfortable & Beautiful",
+      img: "https://cdn.pixabay.com/photo/2020/11/13/14/46/building-5738714_960_720.jpg",
     },
   ];
   return (
@@ -30,20 +34,22 @@ const Banner = () => {
         {bannerImages?.map((item, index) => (
           <SwiperSlide key={index}>
             <section
-              className="h-[500px] bg-cover bg-center flex flex-col items-center justify-center"
+              className="bg-cover bg-center"
               style={{
                 backgroundImage: `url(${item?.img})`,
               }}
             >
-              <h1 className="text-white text-4xl md:text-6xl font-bold">
-                {item?.title}
-              </h1>
-              <div className=" mt-5 flex items-center justify-center">
-                <Link to={""}>
-                  <button className="btn btn-primary shadow-md">
-                    See More
-                  </button>
-                </Link>
+              <div className=" h-[600px] max-lg:h-[550px] max-md:h-[450px] max-sm:h-[350px]  flex flex-col items-center justify-center bg-slate-800/50">
+                <h1 className="text-white text-4xl md:text-6xl font-bold">
+                  {item?.title}
+                </h1>
+                <div className=" mt-5 flex items-center justify-center">
+                  <Link to={"/all_properties"}>
+                    <button className="btn btn-primary shadow-md">
+                      See More
+                    </button>
+                  </Link>
+                </div>
               </div>
             </section>
           </SwiperSlide>
