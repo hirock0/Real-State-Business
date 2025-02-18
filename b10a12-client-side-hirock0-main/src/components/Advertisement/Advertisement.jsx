@@ -30,16 +30,12 @@ const Advertisement = () => {
                   <img
                     src={ad.propertyImage}
                     alt={ad.location}
-                    className="h-48 w-full object-cover rounded-lg mb-4"
+                    className="h-48 max-md:h-52 w-full object-contain rounded-lg mb-4"
                   />
-                  <div className=" h-72 flex flex-col justify-between">
+                  <div className=" h-60 flex flex-col justify-between">
                     <div className="">
-                      <h3 className="text-xl font-bold">
-                        Property Name: {ad.title}
-                      </h3>
-                      <h3 className="text-xl font-bold">
-                        Location: {ad.location}
-                      </h3>
+                      <h3 className="font-bold">Property Name: {ad.title}</h3>
+                      <h3 className=" font-bold">Location: {ad.location}</h3>
                     </div>
                     <div className="">
                       <div className=" flex items-center gap-5">
