@@ -31,7 +31,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className=" bg-slate-50 bg-gradient-to-tl from-orange-100/20 to-red-50/10 border-b-2">
+    <nav className=" bg-gradient-to-bl from-teal-400 to-teal-600 text-white">
       <div className=" container mx-auto px-5">
         <div className="  flex items-center justify-between h-20">
           <div className=" font-semibold">
