@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CardForAllPropertyPage = ({ property }) => {
   return (
-    <div>
+    <div className="hover:scale-105">
       <div
         className="card  bg-white shadow-lg rounded-lg p-4"
         data-aos="fade-up"
@@ -12,7 +12,7 @@ const CardForAllPropertyPage = ({ property }) => {
         <img
           src={property?.propertyImage}
           alt={property?.title}
-          className="h-48 w-full object-cover rounded-lg mb-4"
+          className="h-48 w-full object-contain rounded-lg mb-4"
         />
         {/* Property Details */}
         <h3 className="text-xl font-bold">{property?.title}</h3>

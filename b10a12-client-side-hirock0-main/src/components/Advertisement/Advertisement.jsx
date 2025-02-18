@@ -24,15 +24,17 @@ const Advertisement = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {homePagePropertise?.map((ad, index) => (
                 <div
-                  className="card bg-white shadow-xl p-4 rounded-lg"
+                  className="card hover:scale-105 bg-white shadow-xl p-4 rounded-lg"
                   key={index}
                 >
-                  <img
-                    src={ad.propertyImage}
-                    alt={ad.location}
-                    className="h-48 max-md:h-52 w-full object-contain rounded-lg mb-4"
-                  />
-                  <div className=" h-60 flex flex-col justify-between">
+                  <div className="">
+                    <img
+                      src={ad.propertyImage}
+                      alt={ad.location}
+                      className="h-48 max-md:h-52 w-full object-contain rounded-lg mb-4"
+                    />
+                  </div>
+                  <div className=" h-60 bg-slate-200 p-2 rounded-md flex flex-col justify-between">
                     <div className="">
                       <h3 className="font-bold">Property Name: {ad.title}</h3>
                       <h3 className=" font-bold">Location: {ad.location}</h3>

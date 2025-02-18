@@ -77,7 +77,7 @@ const AllProperties = () => {
                       Sort by Price
                     </button>
                   </div>
-                  <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className=" mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {!ascendingOrder
                       ? SearchArray?.sort(
                           (a, b) => b.timeStamp - a.timeStamp
